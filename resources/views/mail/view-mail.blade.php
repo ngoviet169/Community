@@ -1,0 +1,1 @@
+<a href="{{$link}}/{{$hash}}">Bam vao day de kich hoat</a>

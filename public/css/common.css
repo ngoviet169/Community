@@ -1,0 +1,543 @@
+* {
+    letter-spacing: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/* �v�f�̃t�H���g�T�C�Y��}�[�W���E�p�f�B���O�����Z�b�g���Ă��܂� */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* �V�K�ǉ��v�f�̃f�t�H���g�͂��ׂăC�����C���v�f�ɂȂ��Ă���̂ŁAsection�v�f�Ȃǂ��u���b�N�v�f�֕ύX���Ă��܂� */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* �}�[�J�[�i�s���L���j��\�����Ȃ��悤�ɂ��Ă��܂� */
+ol, ul {
+    list-style: none;
+}
+
+/* ���p���̕\�����o�Ȃ��悤�ɂ��Ă��܂� */
+blockquote, q {
+    quotes: none;
+}
+
+/* blockquote�v�f�Aq�v�f�̑O��ɃR���e���c��ǉ����Ȃ��悤�Ɏw�肵�Ă��܂� */
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* a�v�f�̃t�H���g�T�C�Y�Ȃǂ����Z�b�g���t�H���g�̏c�����̑����ʒu��e�v�f�̃x�[�X���C���ɑ�����悤�ɂ��Ă��܂� */
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* ins�v�f�̃f�t�H���g���Z�b�g���A�F��ς���ꍇ�͂����ŕύX�ł���悤�ɂ��Ă��܂� */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* mark�v�f�̃f�t�H���g���Z�b�g���A�F��t�H���g�X�^�C����ς���ꍇ�͂����ŕύX�ł���悤�ɂ��Ă��܂�
+�܂��Amark�v�f�Ƃ́A�������̌������ʂŊY������t���[�Y���n�C���C�g���āA�ڗ�������ۂɎg�p����悤�ł��B */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* �e�L�X�g�ɑł����������t���悤�ɂ��Ă��܂� */
+del {
+    text-decoration: line-through;
+}
+
+/* IE�ł̓f�t�H���g�œ_���������\������ݒ�ł͂Ȃ��̂ŁA���������悤�ɂ��Ă��܂�
+�܂��A�}�E�X�I�[�o�[���Ƀw���v�J�[�\���̕\�����o��悤�ɂ��Ă��܂� */
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+/* �אڂ���Z���̃{�[�_�[���d�˂ĕ\�����A�Ԋu��0�Ɏw�肵�Ă��܂� */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* �����r���̃f�t�H���g�ł��闧�̓I�Ȍr���������Ȃ����Ă��܂� */
+hr {
+    border: none;
+    border-top: dotted 1px #ededed;
+    height: 1px;
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+/* �c�����̑����ʒu�𒆉������Ɏw�肵�Ă��܂� */
+input, select {
+    vertical-align: middle;
+}
+
+/* �摜����ׂ����Ɍ��Ԃ��o���Ȃ��悤�Ɏw�肵�Ă��܂� */
+img {
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    max-width: 100%;
+    height: auto;
+    width: auto \9; /* ie8 */
+}
+
+textarea {
+    font-size: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/*--------------------------------------------------------
+IE�n�b�N
+-------------------------------------------------------*/
+* html button, * html input, * html select, * html textarea {
+    vertical-align: middle;
+}
+
+/* IE6 */
+* + html button, * + html input, * + html select, * + html textarea {
+    vertical-align: middle;
+}
+
+/* IE7 */
+* html button, * html input {
+    overflow: visible;
+}
+
+/* IE6 */
+* + html button, * + html input {
+    overflow: visible;
+}
+
+/* IE7 */
+* html hr {
+    margin: 0 0 1.2em;
+}
+
+/* IE6 */
+* + html hr {
+    margin: 0 0 1.2em;
+}
+
+/* IE7 */
+* html table {
+    border-collapse: collapse;
+}
+
+/* IE6 */
+* + html table {
+    border-collapse: collapse;
+}
+
+/* IE7 */
+/*--------------------------------------------------------
+//IE�p�̃n�b�N�͉��L�̗l�ɗv�f�̍Ō�Ɂ_0��t����iunicode�j
+CSS�̕����R�[�h��Shift-JIS�̏ꍇ�̓o�b�N�X���b�V�����~�}�[�N�ɂȂ�̂�\0��t����
+------------------------------------------------------*/
+#body {
+    background: none \9; /*ie8�ȉ��n�b�N*/
+}
+
+#body:not(:target) {
+    background: none \9; /*ie9�̂݃n�b�N*/
+}
+
+#body {
+    background: none \0; /*ie�S�ʗp�n�b�N*/
+}
+
+/*--------------------------------------------------------
+advance
+--------------------------------------------------------*/
+/* clear */
+.clear, clearfix {
+    zoom: 1;
+}
+
+.clear:before, .clear:after, .clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clear:after, .clearfix:after {
+    clear: both;
+}
+
+/* font-size */
+html {
+    font-size: 62.5%;
+}
+
+/* 1em=10px */
+body {
+    font-size: 62.5%;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+/* layout */
+.mb5 {
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.mb10 {
+    margin-bottom: 1em;
+    display: block;
+}
+
+.mb15 {
+    margin-bottom: 1.5em;
+    display: block;
+}
+
+.mb20 {
+    margin-bottom: 2em;
+    display: block;
+}
+
+.mb30 {
+    margin-bottom: 3em;
+    display: block;
+}
+
+.mb40 {
+    margin-bottom: 4em;
+    display: block;
+}
+
+.mb50 {
+    margin-bottom: 5em;
+    display: block;
+}
+
+.mb-5 {
+    margin-top: -0.5em;
+    display: block;
+}
+
+.mb-10 {
+    margin-top: -1em;
+    display: block;
+}
+
+.mb-15 {
+    margin-top: -1.5em;
+    display: block;
+}
+
+.mb-20 {
+    margin-top: -2em;
+    display: block;
+}
+
+.ar {
+    display: block;
+    text-align: right;
+}
+
+.ac {
+    display: block;
+    text-align: center;
+}
+
+.ac2 {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.al {
+    display: block;
+    text-align: left;
+}
+
+.fl {
+    display: block;
+    float: left;
+}
+
+.fr {
+    display: block;
+    float: right;
+}
+
+/* font-shadow */
+.fs1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* black10% */
+.fs2 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* black20% */
+.fs3 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* black30% */
+.fs4 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* black40% */
+.fs5 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* black50% */
+/* font-size */
+.f350 {
+    font-size: 350%;
+}
+
+.f300 {
+    font-size: 300%;
+}
+
+.f250 {
+    font-size: 250%;
+}
+
+.f200 {
+    font-size: 200%;
+}
+
+.f150 {
+    font-size: 150%;
+}
+
+.f140 {
+    font-size: 140%;
+}
+
+.f130 {
+    font-size: 130%;
+}
+
+.f120 {
+    font-size: 120%;
+}
+
+.f110 {
+    font-size: 110%;
+}
+
+.f100 {
+    font-size: 100%;
+}
+
+.f90 {
+    font-size: 90%;
+}
+
+.f80 {
+    font-size: 80%;
+}
+
+.f70 {
+    font-size: 70%;
+}
+
+.f60 {
+    font-size: 60%;
+}
+
+.f50 {
+    font-size: 50%;
+}
+
+.f40 {
+    font-size: 40%;
+}
+
+.f30 {
+    font-size: 30%;
+}
+
+.f20 {
+    font-size: 20%;
+}
+
+.f10 {
+    font-size: 10%;
+}
+
+/* font-weight */
+.fb {
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------
+btn
+--------------------------------------------------------*/
+.btn_s a,
+.btn_s input,
+.btn_s2 a,
+.btn_s2 input,
+.btn_s3 a,
+.btn_s3 input {
+    box-sizing: border-box;
+    display: block;
+    padding: 0.2em 1.3em 0.15em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.btn_m a,
+.btn_m2 a,
+.btn_m3 a,
+.btn_m input,
+.btn_m2 input,
+.btn_m3 input {
+    box-sizing: border-box;
+    display: block;
+    width: 320px;
+    padding: 0.5em 0;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.btn_l a,
+.btn_l2 a,
+.btn_l input,
+.btn_l2 input {
+    box-sizing: border-box;
+    display: block;
+    width: 540px;
+    padding: 0.5em 0;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    -webkit-appearance: none;
+}
+
+/* btn_m LR */
+.btnbox-lr {
+    margin-top: 2.5em;
+}
+
+.btnbox-lr .btn_m a, .btnbox-lr .btn_m input {
+    float: right;
+    margin-right: 5%;
+}
+
+.btnbox-lr .btn_m2 a, .btnbox-lr .btn_m2 input {
+    float: left;
+    margin-left: 5%;
+}
+
+/*--------------------------------------------------------
+form
+--------------------------------------------------------*/
+input,
+textarea,
+select {
+    box-sizing: border-box;
+    border: 1px solid #cbcbcb;
+    border-radius: 3px;
+    background: #fafafa;
+    padding: 0.5em;
+    width: 100%;
+}
+
+textarea {
+    height: 200px;
+}
+
+select {
+    background: #e8e8e8;
+    height: 40px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+    background-color: transparent;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: 1px solid #5e5e5e;
+    border-radius: 100%;
+}
+
+input[type="radio"]:checked {
+    background-color: #666;
+}
+
+/*--------------------------------------------------------
+table dl
+--------------------------------------------------------*/
+dt {
+    margin-bottom: 0.5em;
+}
+
+dl {
+    margin-bottom: 1.5em;
+}
+
+.table01 tr {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 1em;
+}
+
+.table01 td {
+    padding: 1em 0;
+    vertical-align: middle;
+}

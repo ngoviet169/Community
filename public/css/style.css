@@ -1,0 +1,593 @@
+/*--------------------------------------------------------
+layout
+--------------------------------------------------------*/
+header, footer, .content {width: 100%; min-width: 1000px; }
+.header-in, .footer-in, .content-in { width: 1000px; margin: auto; }
+.content-in { margin: 3em auto 2em; }
+/*--------------------------------------------------------
+font
+--------------------------------------------------------*/
+/* type */
+body {
+ font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+ text-align: left;
+}
+/* font-color */
+body { color: #464646; }
+section { color: #4c4c4c; }
+.fc1 { color: #fa506d; } /* ポイントカラー用 */
+.fc2 { color: #FF4560; } /* 赤文字用 */
+/* link-color */
+a {
+ color: #ffad21;
+ text-decoration: none;
+ outline: none;
+}
+a:hover {
+ color: #fa506d;
+ text-decoration: underline;
+}
+a:hover img {
+ opacity:0.7;
+}
+/* font-size */
+body {font-size: 1.0rem; }
+h1 { font-size: 1.6rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5, h6, p { font-size: 1.4rem; line-height: 150%; }
+small { font-size: 1.3rem; line-height: 150%; }
+input, select { vertical-align: middle; }
+li, time { font-size: 1.4rem; text-decoration: none; line-height: 160%; }
+th, td { font-size: 1.4rem; text-decoration: none; line-height: 160%; }
+dt, dt label , dd { font-size: 1.2rem; text-decoration: none; line-height: 160%; }
+/* 下記フォームのfont-sizeは16px以上でないと入力時にズームしてしまう */
+select, input, textarea, label { font-size: 1.6rem; text-decoration: none; line-height: 160%; }
+input[type="checkbox"] { font-size: 2.4rem }
+/* 改行 */
+body, h1, h2, h3, h4, h5, p, th, td, li, select, input, label, dt, dd ,time ,li { word-break: break-all; }
+/* 確認ページ */
+section.check-contents dd { font-size: 1.6rem; text-decoration: none; line-height: 160%; }
+/*--------------------------------------------------------
+back color
+--------------------------------------------------------*/
+body { background-color: #f3f3f3; }
+header { background-color: #fff; }
+footer { background-color: #825239; color: #fff; }
+section { background-color: #fff; }
+section.bg01 {
+ background: #81dbd6 !important;
+ color: #FFFFFF;
+ border-bottom: 1px solid #FFFFFF !important;
+}
+/*--------------------------------------------------------
+btn color
+--------------------------------------------------------*/
+.btn_s a, .btn_s input { background: #53cac5; color: #fff; }
+.btn_s a:hover, .btn_s input:hover { background: #43b0aa; color: #fff; text-decoration: none; }
+.btn_m a, .btn_m input { background: #fa506d; color: #fff; }
+.btn_m a:hover, .btn_m input:hover { background: #d2324c; color: #fff; text-decoration: none; }
+.btn_m2 a, .btn_m2 input { background: #c2c2c2; color: #fff; }
+.btn_m2 a:hover, .btn_m2 input:hover { background: #b0b0b0; color: #fff; text-decoration: none; }
+.btn_m3 a, .btn_m3 input { background: #00b6ac; color: #fff; }
+.btn_m3 a:hover, .btn_m3 input:hover { background: #d65a00; color: #fff; text-decoration: none; }
+.btn_l a, .btn_l input { background: #fa6900; color: #fff; }
+.btn_l a:hover, .btn_l input:hover { background: #d65a00; color: #fff; text-decoration: none; }
+.btn_l2 a, .btn_l2 input { background: #fa506d; color: #fff; }
+.btn_l2 a:hover, .btn_l2 input:hover { background: #dd3c57; color: #fff; text-decoration: none;  }
+/*--------------------------------------------------------
+title  color
+--------------------------------------------------------*/
+section h2,
+section h3 { color: #fa506d; }
+/*--------------------------------------------------------
+title
+--------------------------------------------------------*/
+section h2 {
+ margin-bottom: 0.5em;
+ border-bottom: 1px dotted #999;
+ background: url("../img/ico_midashi.png") no-repeat left 3px;
+ background-size: 24px;
+ padding-bottom: 5px;
+ padding-left: 35px;
+}
+section h3 {
+ margin-bottom: 0.5em;
+}
+/*--------------------------------------------------------
+hd
+--------------------------------------------------------*/
+header a:hover {
+ text-decoration: none;
+}
+.header-in {
+ padding: 2em 0;
+}
+header h1 {
+ display: block;
+ float: left;
+ font-size: 2.6rem;
+}
+header h1 a {
+ font-weight: bold;
+}
+/* hdロゴが画像の場合 */
+header h1 a img {
+ display: block;
+ height: 40px;
+ width: auto;
+}
+header nav {
+ display: block;
+ float: right;
+}
+header nav li {
+ float: left;
+ margin: 0;
+ padding: 0 1.5em;
+ border-right: 1px solid #D5D2D0;
+ margin-top: 1em;
+ margin-bottom: 0.5em;
+ font-size: 1.3rem;
+}
+header nav li:last-child {
+ float: left;
+ margin: 0;
+ padding-right: 0;
+ border-right: none;
+ margin-top: 1em;
+ margin-bottom: 0.5em;
+ font-size: 1.3rem;
+}
+header nav li a {
+ color: inherit;
+}
+header .btn_s {
+ float: left;
+}
+/*--------------------------------------------------------
+ft
+--------------------------------------------------------*/
+.entrybox {
+ display: block;
+ text-align: center;
+ margin: 3em auto;
+}
+.entrybox p {
+ margin-top: 1em;
+}
+footer {
+ text-align: center;
+}
+.pagetop {
+ display: block;
+ width: 50px;
+ height: 50px;
+ margin: 0 auto;
+ padding: 3em 0 0.5em;
+}
+footer small {
+ display: block;
+ padding: 0 0 1.5em;
+}
+footer nav li {
+ display: inline-block;
+ margin: 1.5em 0;
+ padding: 0 0.6em;
+ font-size: 1.3rem;
+}
+footer nav li a {
+ color: inherit;
+}
+footer nav li a:hover {
+ color: inherit;
+ text-decoration: underline;
+}
+/*--------------------------------------------------------
+content-layout
+--------------------------------------------------------*/
+section {
+ box-sizing: border-box;
+ padding: 3em 4em 4em;
+ border-radius: 10px;
+ box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+}
+/*--------------------------------------------------------
+title
+--------------------------------------------------------*/
+section h2 {
+ background: url("../img/ico_midashi.png") no-repeat left 5px;
+ background-size: 20px;
+ padding-left: 30px;
+ padding-bottom: 5px;
+ border-bottom: 1px dotted #999;
+ margin-bottom: 1em;
+ font-weight: bold;
+}
+/*--------------------------------------------------------
+content
+--------------------------------------------------------*/
+/* about */
+.about p {
+ padding-bottom: 1.5em;
+ border-bottom: 1px dotted #e7e7e7;
+ margin-bottom: 1.5em;
+}
+/* company */
+.company td:first-child {
+ width: 40%;
+ margin-right: 5%;
+}
+.company td {
+ padding: 1.5em 0.5em;
+}
+/* kiyaku */
+.kiyaku p {
+ font-size: 1.2rem;
+ padding-bottom: 1.5em;
+ border-bottom: 1px dotted #e7e7e7;
+ margin-bottom: 1.5em;
+}
+/* payment */
+.payment td:first-child {
+ width: 30%;
+ margin-right: 5%;
+}
+.payment td {
+ padding: 1.5em 0.5em;
+}
+/* ryoukin */
+.ryoukin li {
+ display: table-cell;
+ vertical-align: middle;
+ padding: 0 2em;
+}
+.ryoukin td:first-child {
+ width: 75%;
+}
+.ryoukin td {
+ font-size: 1.6rem;
+ padding: 1.5em 0.5em;
+}
+.ryoukin td:nth-child(2n) {
+ text-align: right;
+}
+.ryoukin .textbox {
+ padding: 1em 2em 0;
+}
+/* faq */
+.faq h3 {
+ position: relative;
+ padding-left: 50px;
+ font-weight: bold;
+ line-height: 30px;
+ margin-bottom: 1em;
+}
+.faq h3:before {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 30px;
+ height: 30px;
+ background: url("../img/ico_qa01@2x.png") center left no-repeat;
+ background-size: 30px;
+ background-color: #ee8392;
+}
+.faq p {
+ font-size: 1.6rem;
+ position: relative;
+ padding-left: 50px;
+ padding-bottom: 2em;
+ border-bottom: 1px dotted #e7e7e7;
+ margin-bottom: 1.5em;
+}
+.faq p:before {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 30px;
+ height: 30px;
+ background: url("../img/ico_qa02@2x.png") center left no-repeat;
+ background-size: 30px;
+ background-color: #7ca5c4;
+}
+/* nenrei_info */
+.nenrei_info p {
+ padding-bottom: 2em;
+ border-bottom: 1px dotted #e7e7e7;
+ margin-bottom: 1.5em;
+}
+.nenrei_info .imgbox-lr span.leftbox {
+ display: block;
+ width: 50%;
+ height: auto;
+ float: left;
+}
+.nenrei_info .imgbox-lr span.rightbox {
+ display: block;
+ width:46%;
+ height: auto;
+ float: right;
+ margin-left: 4%;
+}
+/* 最下部ラインキャンセル */
+.about p:last-child, .kiyaku p:last-child, .faq p:last-child, .nenrei_info p:last-child { padding-bottom: 0; border-bottom: none; margin-bottom: 0; }
+/*--------------------------------------------------------
+form関連
+entry,login,check
+--------------------------------------------------------*/
+form {
+ width: 82%;
+ margin: 0 auto;
+}
+/* entry,login*/
+.entry, .login { margin-bottom: 3em; }
+.login p { margin-top: 6em; }
+.login dl:nth-child(1),
+.login dl:nth-child(2) {
+ width: 70%;
+ margin-left: auto;
+ margin-right: auto;
+}
+/* sex */
+.sex label { cursor: pointer; }
+.sex input[type=radio], .sex input[type=checkbox] { display: none; }
+.sex input[type="radio"]:checked + label[for="radio01"] { background-color: #86b3e9; }
+.sex input[type="radio"]:checked + label[for="radio02"] { background-color: #f79295; }
+.sex span {
+ display: block;
+ box-sizing: border-box;
+ width: 50%;
+ float: left;
+ text-align: center;
+ margin-top: 1em;
+ margin-bottom: 1em;
+}
+.sex .radio {
+ box-sizing: border-box;
+ background-color: #c2c2c2;
+ border-radius: 4px;
+ color: #fff;
+ padding: 1em 40%;
+}
+/* member */
+.member label { cursor: pointer; }
+.member input[type=radio], .member input[type=checkbox] { display: none; }
+.member input[type="radio"]:checked + label[for="radio03"] { background-color: #fa6900; }
+.member input[type="radio"]:checked + label[for="radio04"] { background-color: #fa6900; }
+.member span {
+ display: block;
+ box-sizing: border-box;
+ width: 50%;
+ float: left;
+ text-align: center;
+ margin-top: 1em;
+ margin-bottom: 1em;
+}
+.member .radio {
+ box-sizing: border-box;
+ background-color: #c2c2c2;
+ border-radius: 4px;
+ color: #fff;
+ padding: 1em 40%;
+}
+/* moreinfo */
+.moreinfo dl {
+ width: 48%;
+ float: left;
+}
+/* moreinfo */
+.moreinfo dl:nth-child(2n+1) {
+ margin-right: 4%;
+}
+/* check */
+.check {
+ text-align: center;
+ margin: 1.5em 0;
+}
+.check input {
+ width: inherit;
+ padding: 0.3em;
+ margin-top: -0.1em;
+}
+/* check-contents */
+.check-contents dd {
+ display: block;
+ background-color: #ededed;
+ padding: 0.5em;
+}
+/*--------------------------------------------------------
+form関連
+massage
+--------------------------------------------------------*/
+#msg_box_bg {
+ display: block;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.70);
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: auto;
+ z-index:99;
+}
+.msg_box {
+ box-sizing: border-box;
+ display: block;
+ width: 430px;
+ height: 240px;
+ padding: 2em;
+ border-radius: 4px;
+ text-align: center;
+ background-color: #f3f3f3;
+ border: 4px solid #c0c0c0;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ margin: auto;
+ z-index:100;
+}
+.msg_box p {
+ box-sizing: border-box;
+ display: table-cell;
+ width: 430px;
+ height: 170px;
+ vertical-align: middle;
+ font-size: 1.5rem;
+ font-weight: bold;
+}
+.msg_close {
+ display: block;
+ position: absolute;
+ bottom: 5px;
+ right:10px;
+}
+a.msg_close {
+ font-size: 1.2rem;
+ color: inherit;
+}
+a.msg_close span {
+ font-size: 1.6rem;
+ color: inherit;
+}
+a:hover.msg_close,
+a:hover.msg_close span {
+ text-decoration: none;
+ color: #fa506d;
+}
+/*--------------------------------------------------------
+index
+--------------------------------------------------------*/
+#index header {
+ width: 100%;
+ height: 620px;
+ background: url("../img/top_pc.png") center center no-repeat;
+ background-size: contain;
+ overflow: hidden;
+ white-space: nowrap;
+ margin-left: -100%;
+ margin-right: -100%;
+ padding-left: 100%;
+ padding-right: 100%;
+ position: relative;
+}
+#index header h1 {
+ font-size: 3.4rem;
+ margin-top: -0.15em;
+}
+/* index btn */
+#index .btn_m a,
+#index .btn_m3 a {
+ width: 360px;
+ padding: 0.35em 0;
+ font-size: 2.8rem;
+}
+#index .btn_s a {
+ width: 180px;
+ padding: 0.5em 0 0.35em;
+ font-size: 1.8rem;
+}
+#index header nav li  {
+ margin: 0;
+}
+/* index enter1 */
+.indexenter {
+ text-align: center;
+ color: #FFFFFF;
+ text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+ position: absolute;
+ left: 0;
+ right: 0;
+ bottom: 2em;
+ margin: auto;
+}
+.indexenter h2 { font-size: 4.5rem; margin-bottom: 0.1em; }
+.indexenter h3 { font-size: 3rem; }
+.indexenter h4 { font-size: 2.4rem;  padding-top: 0.5em; }
+.indexenter .btn_m3 { padding-top: 0.7em; text-shadow: none; }
+.indexenter p { padding-top: 0.5em; }
+/* index enter2 */
+#index .entrybox h3 {
+ font-size: 2.4rem;
+ margin-bottom: 0.5em;
+}
+/* index section */
+#index section {
+ text-align: center;
+ border: none;
+ border-radius: inherit;
+ box-shadow: none;
+ background: inherit;
+}
+#index section:nth-child(1) h3 { font-size: 3.4rem; color: inherit; }
+#index section h3 { font-size: 3.4rem; color: #fff; }
+#index section p { font-size: 2rem; }
+.ico01 {
+ display: block;
+ width: 50px;
+ height: 50px;
+ margin: 0 auto;
+ padding-top: 0.5em;
+ padding-bottom: 2em;
+}
+#index section.bg01 { padding: 0; }
+#index section.bg01 .content-in {
+ width: 920px;
+ margin: 0 auto;
+ padding: 2em 0;
+}
+#index section.bg01 h3 { margin: 2.5em auto 1em; }
+/*--------------------------------------------------------
+IEハック
+--------------------------------------------------------*/
+input {
+ line-height: 100%\0;/* ie全般用ハック */
+}
+.check input {
+ border: none\0;/* ie全般用ハック */
+ background-color: none\0;/* ie全般用ハック */
+}
+.indexenter {
+ filter:dropshadow(color=#616161,offX=1,offY=1);\9/* ie8用ハック */
+}
+/* NTQ added */
+section.nenrei_info .formbox {
+ box-sizing: border-box;
+ padding: 1.5em 2.5em;
+ background-color: #e4e4e4;
+}
+section.nenrei_info form {
+ width: 100%;
+}
+section.nenrei_info input[type=file] {
+ background-color: #e4e4e4;
+ border: 0;
+ width: 60%;
+ float: left;
+ font-size: 1.4rem;
+ line-height: 100%;
+ padding-top: 0.7em;
+}
+section.nenrei_info .btn_m input {
+ font-size: 1.6rem;
+ width: 40%;
+ float: right;
+}
+section.nenrei_info  div {
+ padding-bottom: 1.5em;
+ border-bottom: 1px dotted #e1e1e1;
+ margin-bottom: 1.5em;
+}
+.text-msg {
+ text-align: center;
+ font-size: 12px;
+}
+
+/* /NTQ added */

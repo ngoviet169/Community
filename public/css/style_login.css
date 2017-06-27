@@ -1,0 +1,1889 @@
+/*--------------------------------------------------------
+layout
+--------------------------------------------------------*/
+header, footer, .content {
+    width: 100%;
+    min-width: 1000px;
+}
+
+.header-in, .footer-in, .content-in {
+    width: 1000px;
+    margin: auto;
+}
+
+.content-in {
+    margin: 3em auto 0;
+}
+
+.sidebar {
+    width: 25.5%;
+    float: left;
+}
+
+.main {
+    width: 72.0%;
+    float: right;
+}
+
+/*--------------------------------------------------------
+font
+--------------------------------------------------------*/
+h5, h6, p, li {
+    font-size: 1.3rem;
+    line-height: 150%;
+}
+
+/* link-color */
+.content a {
+    color: #464646;
+    text-decoration: none;
+    outline: none;
+}
+
+.content a:hover {
+    color: #fa506d;
+    text-decoration: none;
+}
+
+.content a:hover img {
+    opacity: 0.6;
+}
+
+/*--------------------------------------------------------
+back color
+--------------------------------------------------------*/
+section {
+    background: #FFFFFF;
+}
+
+section.manual,
+section.searchbox {
+    padding: 2em;
+    box-shadow: inherit;
+}
+
+/*
+section#profile_box { background: #f6f6f6; }
+.login_top section#profile_box { background: #FFFFFF; }
+.login_top section:nth-child(2n+1) { background: #f6f6f6; }
+section .inner { background-color: #f6f6f6; }
+*/
+/* �����o�� */
+.fukidashi1 .mail {
+    background-color: #fff1f1;
+}
+
+.fukidashi2 .mail {
+    background-color: #e6f5ff;
+}
+
+.fukidashi1 .mail:before {
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-bottom: 16px solid #fff1f1;
+}
+
+.fukidashi2 .mail:after {
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-top: 16px solid #e6f5ff;
+}
+
+/*--------------------------------------------------------
+btn color
+--------------------------------------------------------*/
+.btn_s a, .btn_s input {
+    background: #53cac5;
+    color: #fff;
+}
+
+.btn_s a:hover, .btn_s input:hover {
+    background: #43b0aa;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_m a, .btn_m input {
+    background: #fa506d;
+    color: #fff;
+}
+
+.btn_m a:hover, .btn_m input:hover {
+    background: #d2324c;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_m2 a, .btn_m2 input {
+    background: #c2c2c2;
+    color: #fff;
+}
+
+.btn_m2 a:hover, .btn_m2 input:hover {
+    background: #b0b0b0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_m3 a, .btn_m3 input {
+    background: #fa6900;
+    color: #fff;
+}
+
+.btn_m3 a:hover, .btn_m3 input:hover {
+    background: #d65a00;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_l a, .btn_l input {
+    background: #fa6900;
+    color: #fff;
+}
+
+.btn_l a:hover, .btn_l input:hover {
+    background: #d65a00;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_l2 a, .btn_l2 input {
+    background: #fa506d;
+    color: #fff;
+}
+
+.btn_l2 a:hover, .btn_l2 input:hover {
+    background: #dd3c57;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_ms a, .btn_ms input {
+    background: #fa506d;
+    color: #fff;
+}
+
+.btn_ms a:hover, .btn_ms input:hover {
+    background: #d2324c;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_ms2 a, .btn_ms2 input {
+    background: #fa6900;
+    color: #fff;
+}
+
+.btn_ms2 a:hover, .btn_ms2 input:hover {
+    background: #d65a00;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_ms3 a, .btn_ms3 input {
+    background: #53cac5;
+    color: #fff;
+}
+
+.btn_ms3 a:hover, .btn_ms3 input:hover {
+    background: #43b0aa;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_s2 {
+    background: #fa506d;
+    color: #fff;
+}
+
+a:hover .btn_s2 {
+    background: #d2324c;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn_s2 {
+    box-sizing: border-box;
+    display: block;
+    padding: 0.2em 1.3em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.btn_ms a,
+.btn_ms input,
+.btn_ms2 a,
+.btn_ms2 input,
+.btn_ms3 a,
+.btn_ms3 input {
+    box-sizing: border-box;
+    width: 80%;
+    display: block;
+    padding: 0.5em 1em;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    -webkit-appearance: none;
+    margin: 0 auto;
+}
+
+.btn_m a,
+.btn_m2 a,
+.btn_m3 a,
+.btn_m input,
+.btn_m2 input,
+.btn_m3 input {
+    width: 42%;
+}
+
+.btn_l a,
+.btn_l2 a,
+.btn_l input,
+.btn_l2 input {
+    width: 80%;
+}
+
+/* ���C�ɓ���ɒǉ� */
+.btn_add {
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+.btn_add a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.3em 0.5em;
+    background: #f6f6f6;
+    border: 1px solid #ff4560;
+    color: #ff4560;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.btn_add span:before {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin-right: 0.3em;
+    content: " ";
+    background-image: url("../img/ico_heart.png");
+    background-size: contain;
+    vertical-align: bottom;
+}
+
+.btn_add a:hover {
+    background-color: #e8e8e8;
+    background-image: url("../img/ico_heart.png");
+}
+
+/* �ڍ׃v���t�B�[�� */
+.btn_more {
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+.btn_more a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.3em 0.5em;
+    background: #ff4560;
+    border: 1px solid #ff4560;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.btn_more span:before {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin-right: 0.3em;
+    content: " ";
+    background-image: url("../img/ico_arrow_down.png");
+    background-size: contain;
+    vertical-align: bottom;
+}
+
+.btn_more a:hover {
+    border: 1px solid #d2324c;
+    color: #fff;
+    background-color: #d2324c;
+    background-image: url("../img/ico_arrow_down.png");
+}
+
+/*--------------------------------------------------------
+title
+--------------------------------------------------------*/
+section h2 {
+    border-bottom: none;
+    margin-bottom: 0.5em;
+}
+
+.sidebar section h2 {
+    text-align: center;
+    background: none;
+    margin: 0 0 0.7em;
+    padding: 0;
+    font-size: 1.8em;
+}
+
+section.shyousaibox h2 {
+    color: inherit;
+}
+
+/*--------------------------------------------------------
+contents padding
+--------------------------------------------------------*/
+section {
+    margin-bottom: 3em;
+    padding: 2em 3em 3em;
+}
+
+.sidebar section {
+    padding: 1.5em 0 2em;
+}
+
+section.banner {
+    padding: 0;
+}
+
+form {
+    width: 100%;
+}
+
+/*--------------------------------------------------------
+hd-navi
+--------------------------------------------------------*/
+header nav li {
+    border-right: 0;
+    margin: 0;
+}
+
+header nav li a {
+}
+
+header nav li:last-child {
+    margin-top: 0.6em;
+    padding-left: 2.5em;
+}
+
+header li img {
+    max-width: 34px;
+    height: auto;
+}
+
+header .mailCount {
+    position: relative;
+}
+
+header .mailCountNumber {
+    position: absolute;
+    right: -13px;
+    top: -10px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 24px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+header .mailCountNumber {
+    background-color: #fa6900;
+    color: white;
+}
+
+/*--------------------------------------------------------
+img
+--------------------------------------------------------*/
+.photo_s {
+    width: 60px !important;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin: 0 auto;
+}
+
+.photo_m {
+    width: 80px !important;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin: 0 auto;
+}
+
+.photo_l {
+    width: 100px !important;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin: 0 auto;
+}
+
+.photo_s img,
+.photo_m img,
+.photo_l img {
+    vertical-align: inherit;
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+    margin: auto;
+    max-width: 125%;
+    width: 125%;
+    height: auto;
+}
+
+/*--------------------------------------------------------
+pager
+--------------------------------------------------------*/
+.pager {
+    background-color: #f8f8f8;
+    padding: 0.5em 1.5em;
+    border-bottom: 1px dotted #e1e1e1;
+    border-top: 1px dotted #e1e1e1;
+}
+
+.pager span {
+    font-size: 150%;
+}
+
+section.ashiatomember .pager,
+section.searchmember .pager,
+section.mailbox .pager,
+section.shyousaibox .pager {
+    border-bottom: none;
+    padding-bottom: 1em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*--------------------------------------------------------
+mine
+--------------------------------------------------------*/
+section.mine {
+    text-align: center;
+}
+
+section.mine h2 {
+    color: inherit;
+    margin-bottom: 0.5em;
+}
+
+section.mine h2 span {
+    font-size: 70%;
+    font-weight: normal;
+}
+
+section.mine .prof {
+    padding: 0 2em;
+}
+
+section.mine .prof li {
+    font-size: 1.2rem;
+    margin-bottom: 1.5em;
+}
+
+section.mine .prof li:nth-child(2) {
+    margin-bottom: 0.3em;
+}
+
+section.mine .btns li {
+    margin-bottom: 1em;
+}
+
+section.mine .btns li:last-child {
+    margin-bottom: 0;
+}
+
+section.mine .point strong:before {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #fa506d;
+    margin-right: 0.3em;
+    margin-bottom: 0.2em;
+    content: " ";
+    background-image: url("../img/ico_p.png");
+    background-size: contain;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------
+favorite
+--------------------------------------------------------*/
+section.favorite li {
+    border-top: 1px dotted #e1e1e1;
+    padding: 0.5em 1.2em 0.5em 1em;
+}
+
+section.favorite li:nth-child(2n+1) {
+    background-color: #fafafa;
+}
+
+section.favorite li li {
+    display: inline-block;
+    vertical-align: middle;
+    border-top: none;
+    padding: 0;
+}
+
+section.favorite li li.name {
+    padding-left: 0.7em;
+}
+
+section.favorite li li.che {
+    text-align: right;
+    float: right;
+    margin-top: 1.5em;
+    padding-right: 0.5em;
+}
+
+section.favorite .btn_ms {
+    margin: 2em 0 0;
+}
+
+/* �`�F�b�N�{�b�N�X�����₷�� */
+.che {
+    width: 15px;
+    display: block;
+}
+
+.che input[type="checkbox"] {
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+/*--------------------------------------------------------
+information
+--------------------------------------------------------*/
+section.information {
+    padding: 1.5em 2em 2em;
+}
+
+.information iframe {
+    width: 100%;
+}
+
+/*--------------------------------------------------------
+manual
+--------------------------------------------------------*/
+.manual h3 {
+    font-weight: bold;
+    color: inherit;
+    margin-bottom: 1em;
+}
+
+.manual p {
+    margin-bottom: 1em;
+}
+
+.manual h4 {
+    text-align: center;
+}
+
+.manual span {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.ico_img img {
+    width: 20px;
+    height: 20px;
+}
+
+/*--------------------------------------------------------
+nenrei
+--------------------------------------------------------*/
+section.nenrei h3 {
+    margin-bottom: 0.5em;
+}
+
+section.nenrei .formbox {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5em 2.5em;
+    background-color: #e4e4e4;
+}
+
+section.nenrei input[type=file] {
+    background-color: #e4e4e4;
+    border: 0;
+    width: 60%;
+    float: left;
+    font-size: 1.4rem;
+    line-height: 100%;
+    padding-top: 0.7em;
+}
+
+section.nenrei .btn_m input {
+    font-size: 1.6rem;
+    width: 40%;
+    float: right;
+}
+
+.nenrei .imgbox-lr span.leftbox {
+    display: block;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.nenrei .imgbox-lr span.rightbox {
+    display: block;
+    width: 46%;
+    height: auto;
+    float: right;
+    margin-left: 4%;
+}
+
+section.nenrei .inner div {
+    padding-bottom: 1.5em;
+    border-bottom: 1px dotted #e1e1e1;
+    margin-bottom: 1.5em;
+}
+
+section.nenrei .inner dl,
+section.nenrei .inner div.btn_m,
+section.nenrei .inner div:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------
+ryoukin
+--------------------------------------------------------*/
+.ryoukin li {
+    padding: 0 1em;
+}
+
+/*--------------------------------------------------------
+support_login
+--------------------------------------------------------*/
+.member .radio {
+    padding: 1em 37%;
+}
+
+/*--------------------------------------------------------
+ashiato
+--------------------------------------------------------*/
+section.ashiatomember {
+    padding: 1.5em 0 0;
+}
+
+section.ashiatomember h2 {
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+section.ashiatomember li {
+    border-top: 1px dotted #e1e1e1;
+    padding: 1em;
+    vertical-align: middle;
+    background: url("../img/ico_right.png") no-repeat #fff;
+    background-position: right 1em center;
+    background-size: 20px auto;
+}
+
+section.ashiatomember li:nth-child(2n+1) {
+    background-color: #fafafa;
+}
+
+section.ashiatomember a {
+    display: block;
+    cursor: pointer;
+}
+
+section.ashiatomember li:hover {
+    background-color: #ffeeee;
+}
+
+section.ashiatomember li a:hover {
+    color: inherit;
+}
+
+section.ashiatomember li li,
+section.ashiatomember li li:nth-child(2n+1) {
+    border-top: none;
+    background: none;
+    padding: 0;
+    display: inline-block;
+}
+
+section.ashiatomember .photo_m {
+    width: 25%;
+    margin-left: 2%;
+}
+
+section.ashiatomember .name {
+    width: 25%;
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+section.ashiatomember .age {
+    width: 8%;
+}
+
+section.ashiatomember .area {
+    width: 25%;
+}
+
+section.ashiatomember .date {
+    width: 15%;
+    text-align: right;
+}
+
+section.ashiatomember .area:before {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    content: " ";
+    background-image: url("../img/ico_map.png");
+    background-size: contain;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------
+kensaku
+--------------------------------------------------------*/
+/* searchbox */
+section.searchbox .moreinfo dl {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 1em;
+}
+
+section.searchbox .moreinfo {
+    margin-bottom: 1em;
+}
+
+section.searchbox .moreinfo dl select {
+    width: 100%;
+    font-size: 1.4rem;
+    height: 34px;
+}
+
+section.searchbox .moreinfo dl:nth-child(2n+1) {
+    margin-right: 5%;
+}
+
+section.searchbox .moreinfo dl:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* searchmember */
+section.searchmember {
+    padding: 1.5em 0 0;
+}
+
+section.searchmember h2 {
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+section.searchmember li {
+    border-top: 1px dotted #e1e1e1;
+    padding: 1em;
+    vertical-align: middle;
+    background: url("../img/ico_right.png") no-repeat #fff;
+    background-position: right 1em center;
+    background-size: 20px auto;
+}
+
+section.searchmember li:nth-child(2n+1) {
+    background-color: #fafafa;
+}
+
+section.searchmember a {
+    display: block;
+    cursor: pointer;
+}
+
+section.searchmember li li,
+section.searchmember li li:nth-child(2n+1) {
+    border-top: none;
+    background: none;
+    padding: 0;
+}
+
+section.searchmember .leftbox {
+    width: 15%;
+    margin-right: 2%;
+    float: left;
+}
+
+section.searchmember .rightbox {
+    width: 81%;
+    margin-right: 2%;
+    float: right;
+}
+
+section.searchmember .rightbox li,
+section.searchmember .rightbox dd,
+section.searchmember .rightbox dt {
+    display: inline-block;
+}
+
+section.searchmember .rightbox li div {
+    width: 100%;
+}
+
+section.searchmember .name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 30%;
+}
+
+section.searchmember .age {
+    font-size: 1.6rem;
+    width: 10%;
+}
+
+section.searchmember .date {
+    width: 55%;
+    text-align: right;
+}
+
+section.searchmember .rightbox li dl {
+    margin-bottom: 0.5em;
+}
+
+section.searchmember .rightbox li dd {
+    font-size: 1.4rem;
+    margin-right: 2.5em;
+}
+
+section.searchmember .area dd:before {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    content: " ";
+    background-image: url("../img/ico_map.png");
+    background-size: contain;
+    vertical-align: middle;
+}
+
+section.searchmember .area dt {
+    display: none;
+}
+
+section.searchmember .rightbox .hitokoto {
+    width: 92%;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    padding: 0.5em 1em;
+}
+
+section.searchmember .rightbox .btn_s2 {
+    width: 30%;
+    padding: 0.2em 1em;
+    float: right;
+    margin: 1.5em 2em 0 0;
+}
+
+/* hover */
+section.searchmember li:hover {
+    background-color: #ffeeee;
+}
+
+section.searchmember li a:hover {
+    color: inherit;
+}
+
+section.searchmember a:hover .rightbox .hitokoto {
+    width: 92%;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 0.5em 1em;
+}
+
+/*--------------------------------------------------------
+mail
+--------------------------------------------------------*/
+/* mailboxlink */
+section.mailboxlink {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    background-color: inherit;
+    box-shadow: none;
+}
+
+section.mailboxlink li {
+    float: left;
+    width: 22%;
+    background-color: #c1c1c1;
+    margin-right: 4%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+section.mailboxlink li:last-child {
+    margin-right: 0;
+}
+
+section.mailboxlink li.stay {
+    background-color: #fa506d;
+}
+
+section.mailboxlink li a {
+    display: block;
+    padding: 0.6em 0.4em;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+
+section.mailboxlink li a:hover {
+    color: #FFFFFF;
+}
+
+section.mailboxlink li:hover {
+    background-color: #b0b0b0;
+}
+
+section.mailboxlink li.stay:hover {
+    background-color: #d2324c;
+}
+
+/* mailbox */
+section.mailbox {
+    padding: 1.5em 0 0;
+}
+
+section.mailbox h2 {
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+section.mailbox .pointinfo {
+    padding: 0.5em 1em 1em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    float: right;
+}
+
+section.mailbox li {
+    border-top: 1px dotted #e1e1e1;
+    padding: 1em;
+    vertical-align: middle;
+    background: url("../img/ico_right.png") no-repeat #fff;
+    background-position: right 1em center;
+    background-size: 20px auto;
+}
+
+section.mailbox li:nth-child(2n+1) {
+    background-color: #fafafa;
+}
+
+section.mailbox a {
+    display: block;
+    cursor: pointer;
+}
+
+section.mailbox li li,
+section.mailbox li li:nth-child(2n+1) {
+    border-top: none;
+    background: none;
+    padding: 0;
+    display: inline-block;
+}
+
+section.mailbox li .leftbox {
+    width: 15%;
+    margin-right: 2%;
+    float: left;
+}
+
+section.mailbox .rightbox {
+    width: 83%;
+    margin-right: 0%;
+    float: right;
+}
+
+section.mailbox li .rightbox div {
+    width: 100%;
+    display: block;
+}
+
+section.mailbox .photo_s {
+    width: 25%;
+    margin-left: 15%;
+}
+
+section.mailbox .name {
+    width: 25%;
+    font-weight: bold;
+}
+
+section.mailbox .age {
+    width: 13%;
+}
+
+section.mailbox .area {
+    width: 25%;
+}
+
+section.mailbox .area:before {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    content: " ";
+    background-image: url("../img/ico_map.png");
+    background-size: contain;
+    vertical-align: middle;
+}
+
+section.mailbox .date {
+    width: 28%;
+    text-align: right;
+}
+
+section.mailbox li li.hitokoto {
+    box-sizing: border-box;
+    width: 75%;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    float: left;
+}
+
+section.mailbox .btn_s2 {
+    background: #fa506d;
+    width: 15%;
+    padding: 0.2em 1em;
+    margin-top: 1.2em;
+    margin-left: 3%;
+}
+
+/* addressmark */
+section.mailbox li.addressmark {
+    background: url("../img/ico_heart.png") left 1.2em top 0.3em no-repeat, url("../img/ico_right.png") right 1em center no-repeat;
+    background-size: 20px auto;
+    background-color: #fff3f7;
+}
+
+section.mailbox li.addressmark li.hitokoto {
+    background-color: #FFFFFF;
+}
+
+/* hover */
+section.mailbox li:hover,
+section.mailbox li.addressmark:hover {
+    background-color: #ffeeee;
+}
+
+section.mailbox li a:hover {
+    color: inherit;
+}
+
+section.mailbox a:hover .btn_s2 {
+    background: #d2324c;
+}
+
+section.mailbox a:hover li.hitokoto {
+    background-color: #FFFFFF;
+}
+
+/* mailbox infomail */
+section.mailbox.infomail ul a {
+    display: inline-block;
+    cursor: pointer;
+    width: 86%;
+    padding-right: 3%;
+    text-align: right;
+}
+
+section.mailbox.infomail li .che {
+    margin-right: 1em;
+}
+
+section.mailbox.infomail li .date {
+    width: 16%;
+    text-align: left;
+}
+
+section.mailbox.infomail li .btn_s2 {
+    margin-top: 0;
+}
+
+section.mailbox.infomail li .hitokoto {
+    width: 62%;
+    margin-top: 0.5em;
+    float: none;
+    text-align: left;
+}
+
+section.mailbox.infomail .btn_s2 {
+    background: #fa506d;
+    width: 15%;
+    padding: 0.2em 1em;
+    margin-top: 1.2em;
+    margin-left: 3%;
+}
+
+/* mail_btn */
+.mailbox .mail_btn {
+    border-top: 1px dotted #e1e1e1;
+    padding: 1.5em;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.mailbox .mail_btn li {
+    border-top: none;
+    padding: 0;
+    background-color: inherit !important;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.mail_btn li:last-child {
+    padding-right: 0;
+}
+
+.mail_btn li input {
+    padding: 0.5em 0.5em;
+    background: #ededed;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* icons */
+.ico_new {
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 2em;
+    width: 20px;
+    height: 20px;
+    margin: 0.5em auto 0;
+    padding: 0.2em !important;
+    border-radius: 20px;
+    background-color: #7CC5F9;
+    color: #FFFFFF;
+    font-size: 1.0rem !important;
+    text-align: center;
+    line-height: 16px;
+}
+
+.mailbox .ico.ico_new {
+    display: block;
+    margin: -29px 0 0 -17px;
+    position: absolute;
+}
+
+.ico_midoku,
+.ico_kidoku,
+.ico_muryou,
+.ico_photo {
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 2em;
+    margin: 0 auto;
+    padding: 0.2em 0.5em !important;
+    color: #FFFFFF;
+    font-size: 1.0rem !important;
+    text-align: center;
+    line-height: 16px;
+}
+
+.ico_midoku {
+    background-color: #7CC5F9;
+}
+
+.ico_kidoku {
+    background-color: #b1b1b1;
+}
+
+.ico_muryou {
+    background-color: #81dbd6;
+}
+
+.ico_photo {
+    background-color: #fa6900;
+}
+
+/* �`�F�b�N�{�b�N�X�����₷�� */
+.mailbox .che input[type="checkbox"] {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.mailbox .che {
+    margin-left: 0.2em;
+}
+
+/*--------------------------------------------------------
+shyousai
+--------------------------------------------------------*/
+section.shyousaibox {
+    padding: 2em 0 0;
+}
+
+section.shyousaibox h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.shyousai {
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0 3em;
+}
+
+.shyousai .leftbox {
+    width: 20%;
+    float: left;
+}
+
+.shyousai .rightbox {
+    box-sizing: border-box;
+    width: 80%;
+    text-align: left;
+    float: left;
+    margin: 1.5em 0 0.5em 0;
+}
+
+.shyousai li.photo_l {
+    margin-top: 0.5em;
+    float: left;
+}
+
+.shyousai .rightbox li,
+.shyousai .rightbox dl,
+.shyousai .rightbox dt,
+.shyousai .rightbox dd {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.shyousai .rightbox li {
+    margin-right: 2em;
+}
+
+.shyousai .rightbox div {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.shyousai li.name {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.shyousai li.name span {
+    font-size: 80%;
+    font-weight: normal;
+}
+
+.shyousai .rightbox .btn_add {
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    margin-right: 0;
+}
+
+.shyousai .rightbox .area dd:before {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    content: " ";
+    background-image: url("../img/ico_map.png");
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.shyousai .rightbox .area dt {
+    display: none;
+}
+
+.shyousai .rightbox .areabox {
+    padding-bottom: 0.5em;
+    border-bottom: dotted 1px #e1e1e1;
+    margin-bottom: 0;
+}
+
+.shyousai .rightbox div.moreprofile {
+    padding: 1em 0;
+    border-bottom: dotted 1px #e1e1e1;
+    margin-bottom: 1.5em;
+}
+
+.shyousai .rightbox div.moreprofile li {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.shyousai li.hitokoto {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 0.5em 1em;
+}
+
+/* keijiban */
+.keijiban {
+    margin-bottom: 1.5em;
+    padding: 0 3em;
+}
+
+.kakikomi {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5em;
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+.kakikomi .kakikomititle {
+    border-bottom: 1px dotted #b3b3b3;
+    margin-bottom: 1em;
+}
+
+.kakikomi .date {
+    top: 1em;
+    right: 1em;
+    position: absolute;
+    font-size: 1.2rem;
+}
+
+.kakikomi p {
+    display: block;
+    margin-top: 0.5em;
+}
+
+/* shyousaiform */
+.shyousaiform {
+    margin-bottom: 3em;
+    padding: 0 3em;
+}
+
+.shyousaiform form {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5em;
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+.shyousaiform dt div {
+    float: right;
+    text-align: right;
+}
+
+/*--------------------------------------------------------
+mailsyousai
+--------------------------------------------------------*/
+.mailsyousai .shyousai {
+    margin-bottom: 0;
+}
+
+.mailsyousai .rightbox li.btn_more {
+    margin: 0;
+}
+
+.mailsyousai .rightbox .areabox {
+    padding-bottom: 1.5em;
+}
+
+/* mail_shyousai fukidashi */
+.fukidashi1,
+.fukidashi2 {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.fukidashi1 .mail,
+.fukidashi2 .mail {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5em;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.fukidashi1,
+.fukidashi2 {
+    margin-top: 1em;
+}
+
+.fukidashi1 .mail:before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 38px;
+}
+
+.fukidashi2 .mail:after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    right: 36px;
+}
+
+.mailsyousai .myphoto .photo_l {
+    float: right;
+    text-align: right;
+    margin-top: 0.5em;
+}
+
+.mailsyousai .mail .mailtitle {
+    border-bottom: 1px dotted #b3b3b3;
+    margin-bottom: 1em;
+}
+
+.mailsyousai .mail h3 {
+    float: left;
+}
+
+.mailsyousai .mail .date {
+    float: right;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.oshirase .kakikomi {
+    background-color: #f6f6f6;
+    margin-bottom: 3em;
+}
+
+.mailsyousai .mail p.name {
+    margin-top: 0;
+}
+
+/*--------------------------------------------------------
+profile
+--------------------------------------------------------*/
+/* profile */
+section.profile {
+    padding: 2em 3em 2em;
+}
+
+section.profile .areabox {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 0.7em 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+section.profile .areabox p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+section.profile textarea {
+    height: 100px;
+}
+
+section.profile .moreinfo dl {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 1em;
+}
+
+section.profile .moreinfo {
+    margin-bottom: 1em;
+}
+
+section.profile .moreinfo dl select {
+    width: 100%;
+    font-size: 1.4rem;
+    height: 30px;
+}
+
+section.profile .moreinfo dl:nth-child(2n+1) {
+    margin-right: 5%;
+}
+
+section.profile .moreinfo dl:nth-child(3n) {
+    margin-right: 0;
+}
+
+.coution {
+    text-align: center;
+}
+
+/* �摜�Ǘ� */
+section.profile.imgadmin .formbox {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.5em 2.5em;
+    background-color: #e4e4e4;
+}
+
+section.profile.imgadmin input[type=file] {
+    background-color: #e4e4e4;
+    border: 0;
+    width: 60%;
+    float: left;
+    font-size: 1.4rem;
+    line-height: 100%;
+    padding-top: 0.7em;
+}
+
+section.profile.imgadmin .btn_m input {
+    font-size: 1.6rem;
+    width: 40%;
+    float: right;
+}
+
+section.profile.imgadmin form p {
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.imgadminbox li {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.imgadminbox li:nth-child(4) {
+    margin-right: 0;
+}
+
+.imgadminbox li div {
+    margin-bottom: 0.25em;
+}
+
+.imgadminbox li img {
+    width: 120px;
+    height: auto;
+}
+
+.imgadminbox li input[type="radio"] {
+    width: inherit;
+    margin-right: 0.5em;
+}
+
+.imgadminbox li input[type="checkbox"] {
+    width: inherit;
+    margin-left: 1em;
+}
+
+section.profile.imgadmin p.coution {
+    margin: 0.5em 0 0;
+}
+
+/* ���[���A�h���X�̕ύX */
+section.memberedit_mail dt,
+section.memberedit_mail dd {
+    display: inline;
+}
+
+section.memberedit_mail dt label {
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+section.memberedit_mail dd input {
+    width: 68% !important;
+}
+
+/* �o�^�p�X���[�h�̕ύX */
+section.memberedit_pass dt,
+section.memberedit_pass dd {
+    display: inline;
+}
+
+section.memberedit_pass dt label {
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+section.memberedit_pass dd input {
+    width: 68% !important;
+}
+
+/* �o�^�p�X���[�h�̕ύX */
+section.memberedit_infomail dt,
+section.memberedit_infomail dd {
+    display: inline;
+}
+
+section.memberedit_infomail dt label {
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+section.memberedit_infomail dd select {
+    width: 68% !important;
+    font-size: 1.4rem;
+    height: 30px;
+}
+
+/* �N��F�؃����N */
+.nenreilink {
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.nenreilink p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nenreilink p a {
+    font-weight: bold;
+    color: #fa506d;
+}
+
+.nenreilink p a:hover {
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------
+mypage
+--------------------------------------------------------*/
+/* pager */
+#mypage .pager {
+    background-color: #fff;
+}
+
+/* ���Ȃ��ɃI�X�X���̉�� */
+#mypage section.pickupmember {
+    padding: 0;
+    background-color: inherit;
+    box-shadow: none;
+    margin-bottom: 4.5em;
+}
+
+section.pickupmember h2 {
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+#mypage section.pickupmember li {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    margin: 0 0.5em 1em;
+    border-radius: 10px;
+}
+
+#mypage section.pickupmember li a {
+    color: inherit;
+    display: block;
+}
+
+#mypage section.pickupmember li .name,
+#mypage section.pickupmember li .area,
+#mypage section.pickupmember li .text {
+    margin-top: 0.4em;
+    text-align: center;
+}
+
+#mypage section.pickupmember li .name {
+    font-weight: bold;
+}
+
+#mypage section.pickupmember li .age {
+    font-weight: normal;
+    margin-left: 0.5em;
+}
+
+#mypage section.pickupmember li .text {
+    background-color: #f6f6f6;
+    padding: 0.3em;
+    font-size: 90%;
+    text-align: left;
+    min-height: 3em;
+}
+
+/* ���Ȃ��ɃI�X�X���̉�� hover */
+#mypage section.pickupmember li:hover {
+    background-color: #ffeeee;
+}
+
+#mypage section.pickupmember li:hover .text {
+    background-color: #fff;
+}
+
+/* ���Ȃ��ɃI�X�X���̉�� slick�X���C�_�[custom */
+.slick-dots li button:before {
+    font-size: 4rem;
+}
+
+#mypage section.pickupmember .slick-dots li {
+    background-color: inherit;
+    box-shadow: none;
+    padding: 0 !important;
+    margin: 0 0.5em 0;
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}
+
+/* mailbox */
+#mypage section.mailbox.topmail ul a {
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    padding-right: 3%;
+    text-align: left;
+}
+
+#mypage section.mailbox.topmail li .name {
+    width: 28%;
+}
+
+#mypage section.mailbox.topmail li .name span {
+    margin-right: 0.7em;
+}
+
+#mypage section.mailbox.topmail li .date {
+    width: 13%;
+    text-align: left;
+}
+
+#mypage section.mailbox.topmail li .hitokoto {
+    width: 41%;
+    margin-top: 0.5em;
+    float: none;
+}
+
+#mypage section.mailbox.topmail li .btn_s2 {
+    margin-top: 0;
+}
+
+#mypage section.mailbox.topmail .btn_s2 {
+    background: #fa506d;
+    width: 10%;
+    padding: 0.2em 1em;
+    margin-top: 1.2em;
+    margin-left: 2%;
+}
+
+#mypage section.mailbox.topmail .btn_s2 {
+    background: #fa506d;
+    width: 10%;
+    padding: 0.2em 1em;
+    margin-top: 1.2em;
+    margin-left: 2%;
+}
+
+#mypage section.mailbox.topmail a:hover .btn_s2 {
+    background: #d2324c;
+}
+
+/* ashiato */
+#mypage section.ashiatomember li {
+    padding: 0.5em;
+}
+
+#mypage section.ashiatomember li li {
+    padding: 0;
+}
+
+/* bbssubmit */
+section.bbssubmit dt div {
+    float: right;
+    text-align: right;
+}
+
+/*--------------------------------------------------------
+IE�n�b�N
+--------------------------------------------------------*/
+input {
+    line-height: 100% \0; /* ie�S�ʗp�n�b�N */
+}
+
+.check input {
+    border: none \0; /* ie�S�ʗp�n�b�N */
+    background-color: none \0; /* ie�S�ʗp�n�b�N */
+}
+
+.pager span {
+    font-size: 100% \0; /* ie�S�ʗp�n�b�N */
+}
+
+.che input[type="checkbox"] {
+    font-size: 1rem \9; /* ie8�p�n�b�N */
+    padding: 0 \9; /* ie8�p�n�b�N */
+    border: none \9; /* ie8�p�n�b�N */
+}
+
+input[type="radio"] {
+    font-size: 1rem \9; /* ie8�p�n�b�N */
+    padding: 0 \9; /* ie8�p�n�b�N */
+    border: none \9; /* ie8�p�n�b�N */
+}
+
+.imgadminbox input[type="checkbox"] {
+    font-size: 1rem \9; /* ie8�p�n�b�N */
+    padding: 0 \9; /* ie8�p�n�b�N */
+    border: none \9; /* ie8�p�n�b�N */
+}
